@@ -229,7 +229,7 @@ p {
 
 /* Hero Section */
 #hero {
-    background-image: url("{% static 'images/bg.jpg' %}");
+    background-image: url('/static/images/bg.jpg');
 	background-size:cover;
 	background-position-y: center;
 	min-height: 100vh;
@@ -237,6 +237,7 @@ p {
 	position: relative;
 	z-index: 1;
 }
+
 #hero::after {
 	content: '';
 	position: absolute;
@@ -298,6 +299,38 @@ p {
 
 
 /* Projects section */
+
+.s-card {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px; /* Adjust based on your design */
+}
+
+.card1 {
+    background-image: url('/static/images/projects/logorai.png');
+}
+
+.card2 {
+    background-image: url('/static/images/projects/bdk.png');
+}
+
+.card3 {
+    background-image: url('/static/images/projects/photo_2024-11-05_10-05-13.jpg');
+}
+
+.card4 {
+    background-image: url('/static/images/projects/chillydorlic.png');
+}
+
+.card5 {
+    background-image: url('/static/images/projects/salem.png');
+}
+
+.card6 {
+    background-image: url('/static/images/projects/Gerina_Logo.png');
+}
+
 .p-container {
 	
 	width: 100%;
@@ -508,37 +541,6 @@ p {
   }
  
   /* Assuming this CSS file is in your static folder */
-
-.s-card {
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 300px; /* Adjust based on your design */
-}
-
-.card1 {
-	background-image: url("{% static 'images/projects/logorai.png' %}");
-}
-
-.card2 {
-    background-image: url('{% static "images/projects/bdk.png" %}');
-}
-
-.card3 {
-    background-image: url('{% static "images/projects/photo_2024-11-05_10-05-13.jpg" %}');
-}
-
-.card4 {
-    background-image: url('{% static "images/projects/chillydorlic.png" %}');
-}
-
-.card5 {
-    background-image: url('{% static "images/projects/salem.png" %}');
-}
-
-.card6 {
-    background-image: url('{% static "images/projects/Gerina_Logo.png" %}');
-}
 
 /* End Projects section */
 
