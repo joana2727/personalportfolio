@@ -1,0 +1,52 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}
+Raina's Portfolio - About
+{% endblock %}
+
+{% block content %}
+{% load static %}
+<style>
+  .some-class {
+    background-image: url("{% static 'images/logo.png' %}");
+  }
+</style>
+
+<!-- Projects Section -->
+<section id="projects">
+  <section class="skills" id="skills">
+    <h1 class="section-title">Pro<span>jects</span></h1>
+
+    <section class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="s-card swiper-slide card1"></div>
+        <div class="s-card swiper-slide card2"></div>
+        <div class="s-card swiper-slide card3"></div>
+        <div class="s-card swiper-slide card4"></div>
+        <div class="s-card swiper-slide card5"></div>
+        <div class="s-card swiper-slide card6"></div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 300,
+          modifier: 1,
+          slideShadows: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+
+{% endblock %}

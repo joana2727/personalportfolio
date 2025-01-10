@@ -507,6 +507,39 @@ p {
 	transform: translate3d(70%, 0, -220px);
   }
  
+  /* Assuming this CSS file is in your static folder */
+
+.s-card {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px; /* Adjust based on your design */
+}
+
+.card1 {
+	background-image: url("{% static 'images/projects/logorai.png' %}");
+}
+
+.card2 {
+    background-image: url('{% static "images/projects/bdk.png" %}');
+}
+
+.card3 {
+    background-image: url('{% static "images/projects/photo_2024-11-05_10-05-13.jpg" %}');
+}
+
+.card4 {
+    background-image: url('{% static "images/projects/chillydorlic.png" %}');
+}
+
+.card5 {
+    background-image: url('{% static "images/projects/salem.png" %}');
+}
+
+.card6 {
+    background-image: url('{% static "images/projects/Gerina_Logo.png" %}');
+}
+
 /* End Projects section */
 
 

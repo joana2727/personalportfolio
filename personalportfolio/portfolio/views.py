@@ -14,3 +14,6 @@ def projects(request):
 
 def contact(request):
     return render(request, 'portfolio/contact.html')
+
+def projects1(request):
+    return render(request, 'portfolio/projects1.html')
