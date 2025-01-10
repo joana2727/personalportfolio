@@ -1,0 +1,18 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}
+Raina's Portfolio - Home
+{% endblock %}
+
+{% block content %}
+<section id="hero">
+    <div class="hero container">
+        <div>
+            <h1>Hello, <span></span></h1>
+            <h1>My Name is <span></span></h1>
+            <h1>Raina <span></span></h1>
+            <a href="{% url 'projects' %}" type="button" class="cta">Portfolio</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
